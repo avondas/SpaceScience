@@ -9,7 +9,7 @@ LABEL version="1.0"
 COPY requirements.txt ./
 
 # Install all requirements
-RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt && pip install spiceypy
+RUN pip install --upgrade pip && pip install --no-cache-dir -r ../requirements.txt && pip install spiceypy
 
 # Set the Pythonpath and working directory
 ENV PYTHONPATH "/"
